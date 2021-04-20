@@ -1,2 +1,2 @@
-# Covid-19_Rest-Api
+# Covid 19 | Rest Api
  Rest api in node js
