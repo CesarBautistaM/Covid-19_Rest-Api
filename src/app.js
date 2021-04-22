@@ -1,6 +1,8 @@
 import express from 'express'
 import morgan from 'morgan'
 import pkg from '../package.json'
+import Departamento from './models/Departamento'
+import Caso from './models/Caso'
 
 require('dotenv').config({ path: '.env' });
 
@@ -11,7 +13,8 @@ app.set('pkg', pkg);
 app.use(morgan('dev'));
 
 //Routes
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
+    console.log(req)
     res.json({
         name: app.get('pkg').name,
         author: app.get('pkg').author,
