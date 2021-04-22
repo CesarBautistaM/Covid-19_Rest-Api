@@ -4,8 +4,6 @@ import pkg from '../package.json'
 import Departamento from './models/Departamento'
 import Caso from './models/Caso'
 
-require('dotenv').config({ path: '.env' });
-
 const app = express()
 
 app.set('pkg', pkg);
